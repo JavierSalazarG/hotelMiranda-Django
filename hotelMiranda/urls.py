@@ -25,6 +25,6 @@ urlpatterns = [
     path('rooms/', name='rooms'),
     path('room/<int:id>/', name='room'),
     path("rooms/available", name="roomsAvailable"),
-    path("offer/",  name="roomsOffer"), 
+    path("offer/", name="roomsOffer"), 
     path("contacts/",  name="contacts"), 
 ]
