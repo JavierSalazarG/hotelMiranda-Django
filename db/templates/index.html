@@ -15,8 +15,9 @@
 </head>
 
 <body>
+
     <header class="header">
-        <button onclick='openNavbar()' class="button__menu"><img src="./public/img/menu.svg" /></button>
+        <button onclick='openNavbar()' class="button__menu"><img src="{% static '/imgs/menu.svg' %}" /></button>
         <a class="secction__logo">
             <h1>H</h1>
             <H2>HOTEL MIRANDA</H2>
@@ -86,21 +87,21 @@
         <div class="div__imgs_about">
             <div class="div__about_img_1">
                 <div class="div__img_container">
-                    <img class="img__about_1" src="./public/img/img_about_1.jpg" />
+                    <img src="{% static '/imgs/img__about_1.jpg' %}" class="img__about_1" alt="about" />
                 </div>
                 <div class="div__strong">
-                    <img class="img__strong_1" src="./public/img/img__strong.svg" />
-                    <img class="img__strong_2" src="./public/img/img__strong_2.svg" />
+                    <img class="img__strong_1" src="{% static '/imgs/img__strong.svg' %}" />
+                    <img class="img__strong_2" src="{% static '/imgs/img__strong_2.svg' %}" />
                     <h3>Strong Team</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
             <div class="div__about_img_2">
                 <div class="div__img_container">
-                    <img class="img__about_1" src="./public/img/img_about_2.jpg" />
+                    <img class="img__about_1" src="{% static '/imgs/img__about_2.jpg' %}" />
                 </div>
                 <div class="div__strong_2">
-                    <img class="img__strong_3" src="./public/img/img__strong_3.svg" />
+                    <img class="img__strong_3" src="{% static '/imgs/img__strong_3.svg' %}" />
 
                     <h3>Luxury Room</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -115,29 +116,30 @@
             <h3>Hand Picked Rooms</h3>
         </div>
         <div class="div__ventajas">
-            <img src="./public/img/cama.svg" alt="cama" />
-            <img src="./public/img/wifi.svg" alt="wifi" />
-            <img src="./public/img/coche.svg" alt="coche" />
-            <img src="./public/img/copo.svg" alt="copo" />
-            <img src="./public/img/gym.svg" alt="gym" />
-            <img src="./public/img/fuma.svg" alt="no fumar" />
-            <img src="./public/img/coctel.svg" alt="coctel" />
+            <img src="{% static '/imgs/cama.svg' %}" alt="cama" />
+            <img src="{% static '/imgs/wifi.svg' %}" alt="wifi" />
+            <img src="{% static '/imgs/coche.svg' %}" alt="coche" />
+            <img src="{% static '/imgs/copo.svg' %}" alt="copo" />
+            <img src="{% static '/imgs/gym.svg' %}" alt="gym" />
+            <img src="{% static '/imgs/fuma.svg' %}" alt="no fumar" />
+            <img src="{% static '/imgs/coctel.svg' %}" alt="coctel" />
         </div>
         <div class="swiper swiper__imgs mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide div__slide_imgs"><img class="img__scroll" src="./public/img/living-room.jpg" />
+                <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
+                        src="{% static '/imgs/living-room.jpg' %}" />
                 </div>
                 <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="./public/img/habitacion_2.jpg" />
+                        src="{% static '/imgs/habitacion_2.jpg' %}" />
                 </div>
                 <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="./public/img/habitacion_3.jpg" />
+                        src="{% static '/imgs/habitacion_3.jpg' %}" />
                 </div>
                 <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="./public/img/habitacion_4.jpg" />
+                        src="{% static '/imgs/habitacion_4.jpg' %}" />
                 </div>
                 <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="./public/img/habitacion_5.jpg" />
+                        src="{% static '/imgs/habitacion_5.jpg' %}" />
                 </div>
             </div>
 
@@ -179,7 +181,7 @@
             <div class="swiper-wrapper div__wrappers">
                 <div class="swiper-slide div__slicce_box">
                     <div class="div__slicer_imgs">
-                        <img src="./public/img/stars.svg" />
+                        <img src="{% static '/imgs/stars.svg' %}" />
                         <h3>01</h3>
                     </div>
                     <div class='div__slicer_texts'>
@@ -191,7 +193,7 @@
                 </div>
                 <div class="swiper-slide div__slicce_box  ">
                     <div class="div__slicer_imgs">
-                        <img src="./public/img/reloj.svg" />
+                        <img src="{% static '/imgs/reloj.svg' %}" />
                         <h3>02</h3>
                     </div>
                     <div class='div__slicer_texts'>
@@ -203,7 +205,7 @@
                 </div>
                 <div class="swiper-slide div__slicce_box">
                     <div class="div__slicer_imgs">
-                        <img src="./public/img/local.svg" />
+                        <img src="{% static '/imgs/local.svg' %}" />
                         <h3>03</h3>
                     </div>
                     <div class='div__slicer_texts'>
@@ -215,7 +217,7 @@
                 </div>
                 <div class="swiper-slide div__slicce_box">
                     <div class="div__slicer_imgs">
-                        <img src="./public/img/reloj2.svg" />
+                        <img src="{% static '/imgs/reloj2.svg' %}" />
                         <h3>04</h3>
                     </div>
                     <div class='div__slicer_texts'>
@@ -227,7 +229,7 @@
                 </div>
                 <div class="swiper-slide div__slicce_box">
                     <div class="div__slicer_imgs">
-                        <img src="./public/img/tarjeta.svg" />
+                        <img src="{% static '/imgs/tarjeta.svg' %}" />
                         <h3>05</h3>
                     </div>
                     <div class='div__slicer_texts'>
@@ -239,7 +241,7 @@
                 </div>
                 <div class="swiper-slide div__slicce_box">
                     <div class="div__slicer_imgs">
-                        <img src="./public/img/oferta.svg" />
+                        <img src="{% static '/imgs/oferta.svg' %}" />
                         <h3>06</h3>
                     </div>
                     <div class='div__slicer_texts'>
@@ -256,7 +258,7 @@
     </section>
     <section class="section__menu">
         <span class="span__imgs">
-            <img clas='img__donut' src="./public/img/donut.svg" alt="donut" />
+            <img clas='img__donut' src="{% static '/imgs/donut.svg' %}" alt="donut" />
         </span>
         <div class="div__titles">
             <p>Menu</p>
@@ -266,7 +268,7 @@
             <div class="swiper-wrapper weapper-swiper_menu">
                 <div class="swiper-slide div__slide_menu">
                     <article class="article__element_menu">
-                        <img src="./public/img/imgs_menu/huevos&bacon.jpg" />
+                        <img src="{% static '/imgs/imgs_menu/huevos&bacon.jpg' %}" />
                         <div class="div__text_menu">
                             <h4>Egg & Baccon</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
