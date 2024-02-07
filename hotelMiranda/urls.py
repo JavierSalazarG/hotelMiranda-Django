@@ -17,15 +17,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from db import views
 urlpatterns = [
     path('admindb/', admin.site.urls),
-    path('home/', name='home'),
-    path('about/', name='about'),
-    path('contacts/', name='contacts'),
-    path('rooms/', name='rooms'),
-    path('room/<int:id>/', name='room'),
-    path("rooms/available", name="roomsAvailable"),
-    path("offer/", name="roomsOffer"), 
-    path("contacts/",  name="contacts"), 
+    path('home/', views.index,  name='home'),
+   
 ]
