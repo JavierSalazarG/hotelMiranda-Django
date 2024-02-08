@@ -20,8 +20,10 @@ from django.urls import path
 
 from django.views.generic import TemplateView
 from db.views.contact import contact
+from db.views.about import about
 urlpatterns = [
     path('admindb/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('contact/', contact, name='contacts'),
+    path('about/', about, name='about'),
 ]

@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.section__banner_about {
+  width: 100%;
+  height: 33rem;
+  color: #fff;
+  padding-left: 1.25rem;
+  padding-right: 2.5rem;
+  padding-top: 4.7rem;
+  font-family: Archivo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section__banner_about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/about__banner.jpg);
+  background-size: cover;
+  background-color: rgba(34, 34, 34, 0.8);
+  z-index: -1;
+  caret-color: #fff;
+}
+
+.div__message_conford {
+  display: none;
+}
+
+.h3__banner {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+  height: 2.25rem;
+  width: 14.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+
+.h2__banner {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+
+.div__positions_about {
+  width: 9.75rem;
+  height: 3.0625rem;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+  align-self: flex-end;
+}
+
+.p__home_positions {
+  border-right: 1px solid #222;
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.p__position_positions {
+  color: #bead8e;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .section__banner_about {
+    width: 100%;
+    height: 32rem;
+    padding-left: 10rem;
+  }
+  .h3__banner {
+    width: 100%;
+  }
+  .h2__banner {
+    width: 22rem;
+  }
+  .div__message_conford {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    width: 100%;
+    height: 7.5rem;
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+  }
+}
+.section__video_about {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 3rem;
+}
+
+.iframe__video_about {
+  width: 20.9rem;
+  height: 11.6rem;
+}
+
+.p__video {
+  color: #222;
+  text-align: center;
+  font-family: "Old Standard TT";
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media (min-width: 700px) {
+  .section__video_ablout {
+    height: 40rem;
+  }
+  .iframe__video_about {
+    width: 35.9rem;
+    height: 20.6rem;
+  }
+  .p__video {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .section__video_about {
+    height: 75rem;
+  }
+  .iframe__video_about {
+    width: 80%;
+    max-width: 73.125rem;
+    height: 40.625rem;
+  }
+  .p__video {
+    font-size: 4.5rem;
+    width: 66.5rem;
+  }
+}
+.section__elements_about {
+  width: 100%;
+  max-width: 60rem;
+  height: 22rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 4.6rem;
+}
+
+.article__elements {
+  width: 9.8rem;
+  height: 9.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.article__elements:hover {
+  background: #bead8e;
+  box-shadow: 2px 2px 4px rgba(190, 173, 142, 0.3764705882);
+}
+
+.article__elements:hover svg path {
+  fill: #fff;
+}
+
+.article__elements:hover p {
+  color: #fff;
+}
+
+.article__elements p {
+  color: #222;
+  text-align: center;
+  font-family: "Archivo";
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.875rem;
+  letter-spacing: 0.15rem;
+}
+
+.section__restaurant_about {
+  height: 46.625rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__restaurant_about img {
+  width: 18.43rem;
+  height: 14.5rem;
+  object-fit: cover;
+}
+
+.div__text_restaurant {
+  width: 100%;
+  max-width: 19rem;
+  height: 30srem;
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.p__restaurant_title {
+  color: #777;
+  font-weight: 700;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+}
+
+.div__text_restaurant h3 {
+  margin-top: 1.6rem;
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.06rem;
+  text-align: left;
+}
+
+.p__text_restaurant {
+  margin-top: 1.6rem;
+  max-width: 18.4rem;
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.button__take_restaurant {
+  width: 13.5rem;
+  height: 4rem;
+  background: #bead8e;
+  border: none;
+  color: #fff;
+  margin-top: 1rem;
+  box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.36);
+}
+
+@media (min-width: 700px) {
+  .div__text_restaurant {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .section__restaurant_about {
+    flex-direction: row;
+    height: 30rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .section__restaurant_about img {
+    width: 33.125rem;
+    height: 26.25rem;
+  }
+}
+.section__facilities_about {
+  width: 100% !important;
+  padding-top: 3.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222 !important;
+}
+
+.p__facilities {
+  color: #ffffff;
+  font-family: Archivo;
+  font-size: 0.87rem;
+  font-weight: 700;
+  letter-spacing: 0.17rem;
+}
+
+.div__swiper_scrolls {
+  width: 100%;
+  height: 24rem;
+}
+
+.h2__features {
+  color: #ffffff;
+  font-family: "Old Standard TT";
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+}
+
+.div__wrappers {
+  display: flex;
+  align-items: center;
+}
+
+.div__slicce_box_about {
+  text-align: center;
+  font-size: 18px;
+  background: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div__slicce_box_about {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div__slicer_imgs_about {
+  max-width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 9rem;
+}
+
+.div__slicer_imgs_about img {
+  width: 100%;
+  max-width: 4.37rem;
+  align-self: flex-end;
+}
+
+.div__slicer_imgs_about h3 {
+  color: #222222;
+  font-weight: 700;
+  line-height: 8.12rem;
+  font-family: "Archivo";
+  font-size: 7.5rem;
+}
+
+.div__slicer_texts {
+  margin: 0 auto;
+  margin-top: 2.3rem;
+  width: 100%;
+  max-width: 16rem;
+}
+
+.div__slicer_texts h4 {
+  color: #ffffff;
+  font-family: "Old Standard TT";
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  text-align: start;
+}
+
+.div__slicer_texts p {
+  color: #fff;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 1.7rem;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-pagination-color: #bead8e !important;
+}
+
+.section__counter_about {
+  width: 100%;
+  max-width: 63.49rem;
+  margin: 0 auto;
+  height: 57rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 3.7rem;
+}
+
+.p__counter {
+  color: #777;
+  width: 30rem;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.section__counter_about h3 {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  margin-top: 1.5rem;
+}
+
+.div__articles_element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 27rem;
+}
+
+.article__element {
+  width: 20.93rem;
+  height: 8.375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.p__cant {
+  color: #222;
+  font-weight: 400;
+  line-height: 3.75rem;
+  font-family: "Old Standard TT";
+  font-size: 3.75rem;
+}
+
+.p__text_arcticle {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.div__swiper_about {
+  margin-top: 2.3rem;
+  width: 100%;
+  height: 15rem;
+}
+
+.div__slider_counter {
+  width: 100%;
+  height: 15rem;
+}
+
+.img__slice_ccounter_about {
+  width: 21rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+  .div__articles_element {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .div__slider_counter {
+    height: 25rem;
+    gap: 1.5rem;
+  }
+  .img__slice_ccounter_about {
+    width: 30rem;
+    height: 25rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
