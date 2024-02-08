@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static '/styles/styles.css' %}">
     <link rel="stylesheet" href="{% static '/styles/styles-contacts.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="./public/img/logo.ico">
+    <link rel="shortcut icon" href="{% static '/imgs/logo.ico' %}">
     <title>Contacts</title>
 
 
@@ -16,8 +16,8 @@
 
 <body>
     <header class="header">
-        <button onclick='openNavbar()' class="button__menu"><img src="../../public/img/menu.svg" /></button>
-        <a href="../../index.html" class="secction__logo">
+        <button onclick='openNavbar()' class="button__menu"><img src="{% static '/imgs/menu.svg' %}" /></button>
+        <a href="{% url 'home' %}" class="secction__logo">
             <h1>H</h1>
             <H2>HOTEL MIRANDA</H2>
         </a>
@@ -25,7 +25,7 @@
             <a href="../rooms/index.html">Rooms</a>
             <a href="../about/index.html">About Us</a>
             <a href="../offers/index.html">Offers</a>
-            <a href="../contact/index.html">Contact</a>
+            <a href="{% url 'contacts' %}">Contact</a>
         </navbar>
         <div class="div__opcions">
 

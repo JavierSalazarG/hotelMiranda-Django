@@ -26,7 +26,7 @@
             <a href="./src/about/index.html">About Us</a>
             <a href="./src/rooms/index.html">Rooms</a>
             <a href="./src/offers/index.html">Offers</a>
-            <a href="./src/contact/index.html">Contact</a>
+            <a href="{% url 'contacts' %}">Contact</a>
         </navbar>
         <div class="div__opcions">
 
@@ -60,7 +60,7 @@
         </div>
     </section>
     <section class="section__availability">
-        <form class="form__availability">
+        <form method="POST" class="form__availability">
             <div class="element">
                 <label>Arrival Date</label>
                 <input type="date" name="arrival" id="arrival">
