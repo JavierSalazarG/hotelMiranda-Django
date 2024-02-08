@@ -6,16 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static '/styles/styles.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/rooms-styles.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="{% static '/imgs/logo.ico' %}">
-
-    <title>Hotel Miranda</title>
+    <title>Rooms</title>
 
 
 </head>
 
 <body>
-
     <header class="header">
         <button onclick='openNavbar()' class="button__menu"><img src="{% static '/imgs/menu.svg' %}" /></button>
         <a class="secction__logo">
@@ -48,313 +47,40 @@
             </button>
         </div>
     </header>
-    <section class="section__banner_perfect">
-        <div class="div__message_conford">
+    <section class="section__banner_roons">
+        <div class="div__message_conford_rooms">
             <p>We Make Your Feel Comfortable</p>
         </div>
-        <h2 class="h2_alert">THE ULTIMATE LUXURY EXPERIENCE</h2>
-        <h1 class="h1__title">The Perfect Base For You</h1>
-        <div class="div__box">
-            <button class="button_banner button__beige">TAKE A TOUR</button>
-            <button class="button_banner buttonblack">LEARN MORE</button>
+        <h3 class="h3__banner_rooms">THE ULTIMATE LUXURY</h3>
+        <H2 class="h2__banner_rooms">Ultimate Room</H2>
+        <div class="div__positions">
+            <p class="p__home_positions">Home</p>
+            <p class="p__position_positions">Rooms</p>
         </div>
     </section>
-    <section class="section__availability">
-        <form method="POST" class="form__availability">
-            <div class="element">
-                <label>Arrival Date</label>
-                <input type="date" name="arrival" id="arrival">
-            </div>
-            <div class="element">
-                <label>LeDeparture Date</label>
-                <input type="date" name="ledparture" id="ledparture">
-            </div>
-            <input type="submit" class="input__submit " value="CHECK AVAILABILITY">
-        </form>
-    </section>
-    <section class="section__about">
-        <div class="div__about_1">
-            <p class="p__about_span">ABOUT US</p>
-            <H2 class="h2__title_about">Discover Our
-                Underground.</H2>
-            <P class="p__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut
-                aliquip ex ea commodo consequat.</P>
-            <button class="button__book">BOOL NOW</button>
-        </div>
-        <div class="div__imgs_about">
-            <div class="div__about_img_1">
-                <div class="div__img_container">
-                    <img src="{% static '/imgs/img_about_1.jpg' %}" class="img__about_1" alt="about" />
-                </div>
-                <div class="div__strong">
-                    <img class="img__strong_1" src="{% static '/imgs/img__strong.svg' %}" />
-                    <img class="img__strong_2" src="{% static '/imgs/img__strong_2.svg' %}" />
-                    <h3>Strong Team</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                </div>
-            </div>
-            <div class="div__about_img_2">
-                <div class="div__img_container">
-                    <img class="img__about_1" src="{% static '/imgs/img_about_2.jpg' %}" />
-                </div>
-                <div class="div__strong_2">
-                    <img class="img__strong_3" src="{% static '/imgs/img__strong_3.svg' %}" />
-
-                    <h3>Luxury Room</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="section__scroll_imgs">
-        <div class="div__secroll_text">
-            <p class="p__roms">ROMS</p>
-            <h3>Hand Picked Rooms</h3>
-        </div>
-        <div class="div__ventajas">
-            <img src="{% static '/imgs/cama.svg' %}" alt="cama" />
-            <img src="{% static '/imgs/wifi.svg' %}" alt="wifi" />
-            <img src="{% static '/imgs/coche.svg' %}" alt="coche" />
-            <img src="{% static '/imgs/copo.svg' %}" alt="copo" />
-            <img src="{% static '/imgs/gym.svg' %}" alt="gym" />
-            <img src="{% static '/imgs/fuma.svg' %}" alt="no fumar" />
-            <img src="{% static '/imgs/coctel.svg' %}" alt="coctel" />
-        </div>
-        <div class="swiper swiper__imgs mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="{% static '/imgs/living-room.jpg' %}" />
-                </div>
-                <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="{% static '/imgs/habitacion_2.jpg' %}" />
-                </div>
-                <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="{% static '/imgs/habitacion_3.jpg' %}" />
-                </div>
-                <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="{% static '/imgs/habitacion_4.jpg' %}" />
-                </div>
-                <div class="swiper-slide div__slide_imgs"><img class="img__scroll"
-                        src="{% static '/imgs/habitacion_5.jpg' %}" />
-                </div>
-            </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-        </div>
-        <div class="div__data_imgs">
-            <h4>Minimal Duplex Room</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore.</p>
-            <h5>$345<span>/Night</span>
-            </h5>
-        </div>
-    </section>
-    <section class="section__video">
-        <div class="div__text_video">
-            <p class="p__intro">Intro video</p>
-            <h2 class="h2__title">Meet With Our Luxury Place.</h2>
-            <p class="p__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut
-                aliquip ex ea commodo consequat you have to understand this.</p>
-            <button class="button__video">BOOK NOW</button>
-        </div>
-        <iframe class="iframe__video"
-            src="https://www.youtube.com/embed/Bu3Doe45lcU?si=cAuDFft_5fvRJTD-&amp;clip=UgkxoGaKcl356ATRFimV2AYXN4FwamgLJGPH&amp;clipt=EKjDARj4yQQ"
-            title="Video hotel" frameborder="0"
-            allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </section>
-    <section class="section__facilities">
-        <p class="p__facilities">FACILITIES</p>
-        <h2 class="h2__features">Core Features</h2>
-
-        <div class="swiper div__swiper_scrolls swiper-facilities">
-            <div class="swiper-wrapper div__wrappers">
-                <div class="swiper-slide div__slicce_box">
-                    <div class="div__slicer_imgs">
-                        <img src="{% static '/imgs/stars.svg' %}" />
-                        <h3>01</h3>
+    <section class="section__rooms">
+        {% for room in rooms %}
+        <a class="rooms__a" href="../room/{{ room.id }}/">
+            <div id="room{{ room.id }}" class="section__rooms_element">
+                <img class="section__rooms_element_img" src="{{ room.img }}" />
+                <div class="section__rooms_element_info">
+                    <div class="section__rooms_element_info_advantages">
+                        <!-- Aquí puedes iterar sobre las facilidades de la habitación si es necesario -->
                     </div>
-                    <div class='div__slicer_texts'>
-                        <h4 class="h4__texts_slicer">Have High Rating</h4>
-                        <p class="p__texts_slicer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide div__slicce_box  ">
-                    <div class="div__slicer_imgs">
-                        <img src="{% static '/imgs/reloj.svg' %}" />
-                        <h3>02</h3>
-                    </div>
-                    <div class='div__slicer_texts'>
-                        <h4 class="h4__texts_slicer">Quiet Hours</h4>
-                        <p class="p__texts_slicer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide div__slicce_box">
-                    <div class="div__slicer_imgs">
-                        <img src="{% static '/imgs/local.svg' %}" />
-                        <h3>03</h3>
-                    </div>
-                    <div class='div__slicer_texts'>
-                        <h4 class="h4__texts_slicer">Best Locations</h4>
-                        <p class="p__texts_slicer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide div__slicce_box">
-                    <div class="div__slicer_imgs">
-                        <img src="{% static '/imgs/reloj2.svg' %}" />
-                        <h3>04</h3>
-                    </div>
-                    <div class='div__slicer_texts'>
-                        <h4 class="h4__texts_slicer">Free Cancellation</h4>
-                        <p class="p__texts_slicer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide div__slicce_box">
-                    <div class="div__slicer_imgs">
-                        <img src="{% static '/imgs/tarjeta.svg' %}" />
-                        <h3>05</h3>
-                    </div>
-                    <div class='div__slicer_texts'>
-                        <h4 class="h4__texts_slicer">Payment Options</h4>
-                        <p class="p__texts_slicer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-                <div class="swiper-slide div__slicce_box">
-                    <div class="div__slicer_imgs">
-                        <img src="{% static '/imgs/oferta.svg' %}" />
-                        <h3>06</h3>
-                    </div>
-                    <div class='div__slicer_texts'>
-                        <h4 class="h4__texts_slicer">Special Offers</h4>
-                        <p class="p__texts_slicer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna..</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    <section class="section__menu">
-        <span class="span__imgs">
-            <img clas='img__donut' src="{% static '/imgs/donut.svg' %}" alt="donut" />
-        </span>
-        <div class="div__titles">
-            <p>Menu</p>
-            <h2>Our Foods Menu</h2>
-        </div>
-        <div class="swiper div__swiper_menu swiperMenu ">
-            <div class="swiper-wrapper weapper-swiper_menu">
-                <div class="swiper-slide div__slide_menu">
-                    <article class="article__element_menu">
-                        <img src="{% static '/imgs/imgs_menu/huevos&bacon.jpg' %}" />
-                        <div class="div__text_menu">
-                            <h4>Egg & Baccon</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    <div class="section__rooms_element_info_texts">
+                        <h3 class="section__rooms_element_info_texts_h3">{{ room.bedType }}</h3>
+                        <p class="section__rooms_element_info_texts_p">{{ room.descripcion }}</p>
+                        <div class="section__rooms_element_info_texts_div">
+                            <p class="section__rooms_element_info_texts_div_price">${{ room.rate }}/Night</p>
+                            <p class="section__rooms_element_info_texts_div_new">Booking Now</p>
                         </div>
-                    </article>
-                    <article class="article__element_menu">
-                        <img src="{% static '/imgs/imgs_menu/cafe.jpg' %}" />
-                        <div class="div__text_menu">
-                            <h4>Tea or Coffee</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </article>
-
-                    <article class="article__element_menu">
-                        <img src="{% static '/imgs/imgs_menu/chia.jpg' %}" />
-                        <div class="div__text_menu">
-                            <h4>Chia Oatmeal</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide div__slide_menu">
-                    <article class="article__element_menu">
-                        <img src="{% static '/imgs/imgs_menu/fruit.jpg' %}" />
-                        <div class="div__text_menu">
-                            <h4>Fruit Parfait</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </article>
-                    <article class="article__element_menu">
-                        <img src="{% static '/imgs/imgs_menu/mermelada-min.jpg' %}" />
-                        <div class="div__text_menu">
-                            <h4>Marmalade Selection</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </article>
-
-                    <article class="article__element_menu">
-                        <img src="{% static '/imgs/imgs_menu/queso.jpg' %}" />
-                        <div class="div__text_menu">
-                            <h4>Cheese Plate</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
-            <div class="button__swiper">
+        </a>
+        {% endfor %}
+    </section>
 
-                <div class="swiper-button-next div__swiper_button_next"></div>
-                <div class="swiper-button-prev div__swiper_button_prev"></div>
-            </div>
-        </div>
-        <div class="swiper swiperMenuImg  div__swiper_postres">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="img__slide_postre" src="{% static '/imgs/imgs_menu/salmon.jpg' %}"
-                        alt="salmon" /></div>
-                <div class="swiper-slide"><img class="img__slide_postre" src="{% static '/imgs/imgs_menu/carne.jpg' %}"
-                        alt="carne" /></div>
-                <div class="swiper-slide"><img class="img__slide_postre" src="{% static '/imgs/imgs_menu/pizza.jpg' %}"
-                        alt="pizza" /></div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    <section class="setion__record">
-        <div class="div__elemens">
-            <img src="{% static '/imgs/coete.svg' %}" />
-            <h3>84k+</h3>
-            <h5>Projects are Completed</h5>
-        </div>
-        <div class="div__elemens">
-            <img src="{% static '/imgs/img__strong.svg' %}" />
-            <h3>10M+</h3>
-            <h5>Active Backers Around World</h5>
-        </div>
-        <div class="div__elemens">
-            <img src="{% static '/imgs/icon_finances.svg' %}" />
-            <h3>02k+</h3>
-            <h5>Categories Served</h5>
-        </div>
-        <div class="div__elemens">
-            <img src="{% static '/imgs/book.svg' %}" />
-            <h3>100M+</h3>
-            <h5>Idea Raised Funds</h5>
-        </div>
-    </section>
     <footer class="footer">
         <div class="sections">
             <div class="div__section_1">
@@ -364,8 +90,7 @@
                 </a>
                 <p class="p__lorem">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion
-                    ullamco
-                    laboris nisi.</p>
+                    ullamco laboris nisi.</p>
 
                 <nav class="nav__redes">
                     <a><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -503,8 +228,5 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/header/openNavbar.js"></script>
-
-    <script src="{% static '/js/home.js' %}"></script>
-
+    <script src="../header/openNavbar.js"></script>
 </body>
