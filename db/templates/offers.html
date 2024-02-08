@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static '/styles/styles.css' %}">
     <link rel="stylesheet" href="{% static '/styles/offers-styles.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="../../public/img/logo.ico">
+    <link rel="shortcut icon" href="{% static '/imgs/logo.ico' %}">
     <title>Offers</title>
 
 
@@ -59,223 +59,64 @@
         </div>
     </section>
     <section class="section__offer">
+        {% for room in rooms %}
         <div class="section__offer_offer">
-            <img class="section__offer_offer_img" src="../../public/img/offer/offer_01.jpg" />
+
+            <img class="section__offer_offer_img" src="{{ room.img }}" />
 
             <div class="offer__div_texts">
                 <div class="section__offer_offer_title">
                     <div class="section__offer_offer_title_texts">
-                        <p class="section__offer_offer_title_texts_p">Double Bed</p>
+                        <p class="section__offer_offer_title_texts_p">{{ room.bedType }}</p>
                         <H4 class="section__offer_offer_title_texts_h4">Luxury Double Bed</H4>
                     </div>
                     <div class="section__offer_offer_title_price">
-                        <p class="section__offer_offer_title_price_ancient">$500/Night</p>
-                        <p class="section__offer_offer_title_price_new">$345/Night</p>
+                        <p class="section__offer_offer_title_price_ancient">${{ room.rate }}/Night</p>
+                        <p class="section__offer_offer_title_price_new">${{ room.offerPrice }}/Night</p>
                     </div>
 
                 </div>
                 <div class="section__offer_offer_description">
-                    <p class="section__offer_offer_description_p">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
+                    <p class="section__offer_offer_description_p">{{ room.descripcion }}</p>
                 </div>
                 <nav class="section__offer_offer_nav">
                     <ul class="section__offer_offer_nav_ul">
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/01.svg" /> Air
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/01.svg' %}" />
+                            Air
                             conditioner</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/02.svg" />
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/02.svg' %}" />
                             Breakfast
                         </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/03.svg" />
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/03.svg' %}" />
                             Cleaning
                         </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/04.svg" />
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/04.svg' %}" />
                             Grocery
                         </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/05.svg" /> Shop
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/05.svg' %}" />
+                            Shop
                             near
                         </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/08.svg" /> High
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/08.svg' %}" />
+                            High
                             speed WiFi</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/010.svg" />
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/010.svg' %}" />
                             Shower
                         </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/011.svg" />
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/011.svg' %}" />
                             Single
                             bed</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/012.svg" />
+                        <li class="section__offer_offer_nav_ul_li"><img src="{% static '/imgs/amenities/012.svg' %}" />
                             Towels
                         </li>
                     </ul>
                 </nav>
                 <button class="section__offer_offer_button">Book Now</button>
             </div>
-        </div>
-        <div class="section__offer_offer">
-            <img class="section__offer_offer_img" src="../../public/img/offer/offer_02.jpg" />
 
-            <div class="offer__div_texts">
-                <div class="section__offer_offer_title">
-                    <div class="section__offer_offer_title_texts">
-                        <p class="section__offer_offer_title_texts_p">Double Bed</p>
-                        <H4 class="section__offer_offer_title_texts_h4">Luxury Double Bed</H4>
-                    </div>
-                    <div class="section__offer_offer_title_price">
-                        <p class="section__offer_offer_title_price_ancient">$500/Night</p>
-                        <p class="section__offer_offer_title_price_new">$345/Night</p>
-                    </div>
-
-                </div>
-                <div class="section__offer_offer_description">
-                    <p class="section__offer_offer_description_p">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
-                </div>
-                <nav class="section__offer_offer_nav">
-                    <ul class="section__offer_offer_nav_ul">
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/01.svg" /> Air
-                            conditioner</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/02.svg" />
-                            Breakfast
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/03.svg" />
-                            Cleaning
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/04.svg" />
-                            Grocery
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/05.svg" /> Shop
-                            near
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/08.svg" /> High
-                            speed WiFi</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/010.svg" />
-                            Shower
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/011.svg" />
-                            Single
-                            bed</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/012.svg" />
-                            Towels
-                        </li>
-                    </ul>
-                </nav>
-                <button class="section__offer_offer_button">Book Now</button>
-            </div>
-        </div>
-        <div class="section__offer_offer">
-            <img class="section__offer_offer_img" src="../../public/img/offer/offer_03.jpg" />
-
-            <div class="offer__div_texts">
-                <div class="section__offer_offer_title">
-                    <div class="section__offer_offer_title_texts">
-                        <p class="section__offer_offer_title_texts_p">Double Bed</p>
-                        <H4 class="section__offer_offer_title_texts_h4">Luxury Double Bed</H4>
-                    </div>
-                    <div class="section__offer_offer_title_price">
-                        <p class="section__offer_offer_title_price_ancient">$500/Night</p>
-                        <p class="section__offer_offer_title_price_new">$345/Night</p>
-                    </div>
-
-                </div>
-                <div class="section__offer_offer_description">
-                    <p class="section__offer_offer_description_p">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
-                </div>
-                <nav class="section__offer_offer_nav">
-                    <ul class="section__offer_offer_nav_ul">
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/01.svg" /> Air
-                            conditioner</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/02.svg" />
-                            Breakfast
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/03.svg" />
-                            Cleaning
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/04.svg" />
-                            Grocery
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/05.svg" /> Shop
-                            near
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/08.svg" /> High
-                            speed WiFi</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/010.svg" />
-                            Shower
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/011.svg" />
-                            Single
-                            bed</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/012.svg" />
-                            Towels
-                        </li>
-                    </ul>
-                </nav>
-                <button class="section__offer_offer_button">Book Now</button>
-            </div>
-        </div>
-        <div class="section__offer_offer">
-            <img class="section__offer_offer_img" src="../../public/img/offer/offer_04.jpg" />
-
-            <div class="offer__div_texts">
-                <div class="section__offer_offer_title">
-                    <div class="section__offer_offer_title_texts">
-                        <p class="section__offer_offer_title_texts_p">Double Bed</p>
-                        <H4 class="section__offer_offer_title_texts_h4">Luxury Double Bed</H4>
-                    </div>
-                    <div class="section__offer_offer_title_price">
-                        <p class="section__offer_offer_title_price_ancient">$500/Night</p>
-                        <p class="section__offer_offer_title_price_new">$345/Night</p>
-                    </div>
-
-                </div>
-                <div class="section__offer_offer_description">
-                    <p class="section__offer_offer_description_p">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
-                </div>
-                <nav class="section__offer_offer_nav">
-                    <ul class="section__offer_offer_nav_ul">
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/01.svg" /> Air
-                            conditioner</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/02.svg" />
-                            Breakfast
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/03.svg" />
-                            Cleaning
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/04.svg" />
-                            Grocery
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/05.svg" /> Shop
-                            near
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/08.svg" /> High
-                            speed WiFi</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/010.svg" />
-                            Shower
-                        </li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/011.svg" />
-                            Single
-                            bed</li>
-                        <li class="section__offer_offer_nav_ul_li"><img src="../../public/img/amenities/012.svg" />
-                            Towels
-                        </li>
-                    </ul>
-                </nav>
-                <button class="section__offer_offer_button">Book Now</button>
-            </div>
         </div>
 
+        {% endfor %}
     </section>
     <section class="section__popular">
         <p class="section__popular_p">Popular List</p>
