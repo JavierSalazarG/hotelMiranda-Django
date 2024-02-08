@@ -1,0 +1,483 @@
+.section__banner_offers {
+  width: 100%;
+  height: 33rem;
+  color: #fff;
+  padding-left: 1.25rem;
+  padding-right: 2.5rem;
+  padding-top: 4.7rem;
+  font-family: Archivo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section__banner_offers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/banner_offers.jpg);
+  background-size: cover;
+  background-color: rgba(34, 34, 34, 0.8);
+  z-index: -1;
+  caret-color: #fff;
+}
+
+.div__message_conford_offers {
+  display: none;
+}
+
+.h3__offers {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+  height: 2.25rem;
+  width: 14.8rem;
+  align-self: flex-start;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+
+.h2__offers {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+  height: 5rem;
+}
+
+.div__positions_room_offers {
+  width: 10.75rem;
+  height: 3.0625rem;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 9rem;
+  align-self: flex-end;
+}
+
+.p__home_positions_offers {
+  border-right: 1px solid #222;
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.p__position_positions_offers {
+  color: #bead8e;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .section__banner_offers {
+    width: 100%;
+    height: 32rem;
+    padding-left: 10rem;
+  }
+  .h3__banner_offers {
+    width: 100%;
+  }
+  .h2__banner_offers {
+    width: 22rem;
+  }
+  .div__message_conford_offers {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    width: 100%;
+    height: 7.5rem;
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+  }
+  .div__message_conford_offers p {
+    margin: 0 auto;
+    text-align: left;
+    width: 85%;
+  }
+}
+.section__offer {
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 700px) {
+  .section__offer {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .section__offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+}
+.section__offer_offer {
+  width: 90%;
+  max-width: 21rem;
+  margin: 0 auto;
+  height: 62.5rem;
+  background: #fff;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.281);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer {
+    max-width: 73rem;
+    height: 65rem;
+    box-shadow: none;
+  }
+}
+.section__offer_offer_img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_img {
+    width: 100%;
+    max-width: 73rem;
+    height: 36rem;
+  }
+}
+.section__offer_offer_title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_title {
+    height: 11rem;
+    border-bottom: 2px solid #ececec;
+    flex-direction: row;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.2rem;
+  }
+}
+.section__offer_offer_title_texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.section__offer_offer_title_texts_p {
+  color: #777;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+  text-transform: uppercase;
+}
+.section__offer_offer_title_texts_h4 {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.09rem;
+  margin-top: 1rem;
+}
+.section__offer_offer_title_price {
+  width: 9rem;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  position: relative;
+  bottom: 15rem;
+  right: 1rem;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_title_price {
+    position: unset;
+    align-self: center;
+  }
+}
+.section__offer_offer_title_price_ancient {
+  color: #bead8e;
+  font-family: "Archivo";
+  font-size: 1.0375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: line-through;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+.section__offer_offer_title_price_new {
+  color: #de5777;
+  text-align: right;
+  font-family: "Archivo";
+  font-size: 1.575rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+  margin-top: 1rem;
+}
+.section__offer_offer_description {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_description {
+    min-width: 21rem !important;
+    max-width: 45%;
+  }
+}
+.section__offer_offer_description_p {
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_description_p {
+    max-width: 20rem;
+  }
+}
+.section__offer_offer_nav {
+  width: 90%;
+  height: 13rem;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_nav {
+    max-width: 20rem;
+    height: 10rem;
+  }
+}
+.section__offer_offer_nav_ul {
+  width: 100%;
+  margin-top: 2.2rem;
+  height: 13rem;
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_nav_ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    height: 10rem;
+    margin-top: 0;
+  }
+}
+.section__offer_offer_nav_ul_li {
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  list-style: none;
+  color: #777;
+  font-family: "Roboto";
+  font-size: 0.9375rem;
+  font-weight: 500;
+  gap: 0.3rem;
+}
+@media (min-width: 1000px) {
+  .section__offer_offer_nav_ul_li {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+.section__offer_offer_button {
+  width: 13.5rem;
+  height: 3.75rem;
+  background: #bdac8d;
+  color: #fff;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.offer__div_texts {
+  width: 90%;
+  max-width: 65.625rem;
+}
+@media (min-width: 1000px) {
+  .offer__div_texts {
+    height: 45rem;
+    background: #fff;
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.281);
+    padding-top: 3.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3.6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 3rem;
+    border-top: 5px solid #bdac8d;
+    gap: 1rem;
+  }
+}
+
+.section__popular {
+  width: 100%;
+  height: 45rem;
+  background: #222;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .section__popular {
+    margin-top: 10rem;
+  }
+}
+.section__popular_p {
+  color: #bdac8d;
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.175rem;
+  text-transform: uppercase;
+}
+.section__popular_h3 {
+  color: #fff;
+  font-family: "Old Standard TT";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  margin-top: 1.5rem;
+}
+.section__popular_swiper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 28rem;
+  margin-top: 5rem;
+}
+.section__popular_swiper__popular_slide {
+  width: 100%;
+  max-width: 24rem;
+  height: 28rem;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.section__popular_swiper__popular_slide_img {
+  width: 100% !important;
+  height: 13.6rem !important;
+  max-height: 15rem !important;
+}
+.section__popular_swiper__popular_slide_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.section__popular_swiper__popular_slide_info_advantages {
+  width: 16rem;
+  height: 2.5rem;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: 2rem;
+}
+.section__popular_swiper__popular_slide_info_texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 2rem;
+}
+.section__popular_swiper__popular_slide_info_texts_h3 {
+  color: #222;
+  text-align: right;
+  font-family: "Old Standard TT";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.section__popular_swiper__popular_slide_info_texts_p {
+  color: #777;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  width: 18.2rem;
+  max-width: 10rem;
+}
+.section__popular_swiper__popular_slide_info_texts_div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.2rem;
+}
+.section__popular_swiper__popular_slide_info_texts_div_price {
+  color: #bead8e;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+}
+.section__popular_swiper__popular_slide_info_texts_div_new {
+  color: #bdbdbd;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.wrapper_popular {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .wrapper_popular {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
