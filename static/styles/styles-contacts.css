@@ -1,0 +1,269 @@
+.section__banner_about {
+  width: 100%;
+  height: 33rem;
+  color: #fff;
+  padding-left: 1.25rem;
+  padding-right: 2.5rem;
+  padding-top: 4.7rem;
+  font-family: Archivo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section__banner_about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../public/img/banner__contact.jpg);
+  background-size: cover;
+  background-color: rgba(34, 34, 34, 0.8);
+  z-index: -1;
+  caret-color: #fff;
+}
+
+.div__message_conford {
+  display: none;
+}
+
+.h3__banner {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+  height: 2.25rem;
+  width: 14.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+
+.h2__banner {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+}
+
+.div__positions_contact {
+  width: 9.75rem;
+  height: 3.0625rem;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+  align-self: flex-end;
+}
+
+.p__home_positions {
+  border-right: 1px solid #222;
+  color: #222;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.p__position_positions {
+  color: #bead8e;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .section__banner_about {
+    width: 100%;
+    height: 32rem;
+    padding-left: 10rem;
+  }
+  .h3__banner {
+    width: 100%;
+  }
+  .h2__banner {
+    width: 22rem;
+  }
+  .div__message_conford {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    width: 100%;
+    height: 7.5rem;
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+  }
+}
+.section__data_ccontact {
+  width: 100%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 1200px) {
+  .section__data_ccontact {
+    flex-direction: row;
+  }
+}
+.section__data_ccontact_data {
+  width: 100%;
+  max-width: 25rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.section__data_ccontact_data_imgIcon {
+  height: fit-content;
+  position: relative;
+  left: 3rem;
+  bottom: 1rem;
+}
+.section__data_ccontact_data_divData {
+  width: 12.5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: 5rem;
+}
+.section__data_ccontact_data_divData_h5 {
+  color: #222;
+  font-family: "Old Standard TT";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.section__data_ccontact_data_divData_p {
+  color: #777;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.section__form {
+  width: 100%;
+  height: 34rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 5.25rem;
+}
+.section__form_form {
+  width: 100%;
+  height: 37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 1000px) {
+  .section__form_form {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 30rem;
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+}
+.section__form_form_label {
+  width: 100%;
+  height: 4.1rem;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 29.3rem;
+}
+.section__form_form_label_input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  padding: 1rem;
+  color: #777;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 1rem;
+  outline: none;
+}
+.section__form_form_LabeltextTerra {
+  width: 100%;
+  height: 12.5rem;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 29.3rem;
+}
+@media (min-width: 1000px) {
+  .section__form_form_LabeltextTerra {
+    width: 60.6rem;
+    height: 15.6rem;
+    flex-basis: 100%;
+  }
+}
+.section__form_form_LabeltextTerra_img {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1000px) {
+  .section__form_form_LabeltextTerra_img {
+    margin-top: 3rem;
+  }
+}
+.section__form_form_LabeltextTerra_texterra {
+  width: 100%;
+  height: 12rem;
+  border: none;
+  background: transparent;
+  padding: 1rem;
+  color: #777;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 1rem;
+  outline: none;
+}
+.section__form_form_div {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__form_form_div_submit {
+  width: 16.1rem;
+  height: 3.75rem;
+  background: #bead8e;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  border: none;
+  margin-top: 2.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

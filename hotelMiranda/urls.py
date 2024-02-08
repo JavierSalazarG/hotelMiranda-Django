@@ -19,8 +19,9 @@ from django.contrib import admin
 from django.urls import path
 
 from django.views.generic import TemplateView
-
+from db.views.contact import contact
 urlpatterns = [
     path('admindb/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    path('contact/', contact, name='contacts'),
 ]

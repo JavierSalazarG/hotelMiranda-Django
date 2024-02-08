@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static '/styles/styles.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="./public/img/logo.ico">
+    <link rel="shortcut icon" href="{% static '/imgs/logo.ico' %}">
 
     <title>Hotel Miranda</title>
 
@@ -87,7 +87,7 @@
         <div class="div__imgs_about">
             <div class="div__about_img_1">
                 <div class="div__img_container">
-                    <img src="{% static '/imgs/img__about_1.jpg' %}" class="img__about_1" alt="about" />
+                    <img src="{% static '/imgs/img_about_1.jpg' %}" class="img__about_1" alt="about" />
                 </div>
                 <div class="div__strong">
                     <img class="img__strong_1" src="{% static '/imgs/img__strong.svg' %}" />
@@ -98,7 +98,7 @@
             </div>
             <div class="div__about_img_2">
                 <div class="div__img_container">
-                    <img class="img__about_1" src="{% static '/imgs/img__about_2.jpg' %}" />
+                    <img class="img__about_1" src="{% static '/imgs/img_about_2.jpg' %}" />
                 </div>
                 <div class="div__strong_2">
                     <img class="img__strong_3" src="{% static '/imgs/img__strong_3.svg' %}" />
@@ -505,6 +505,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/header/openNavbar.js"></script>
 
-    <script src="./src/scripts/home.js"></script>
+    <script src="{% static '/js/home.js' %}"></script>
 
 </body>
