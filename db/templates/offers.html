@@ -123,60 +123,33 @@
         <h3 class="section__popular_h3">Popular Rooms</h3>
         <div class="swiper section__popular_swiper">
             <div class="swiper-wrapper wrapper_popular">
+                {% for room in popularRoom %}
                 <div class="swiper-slide section__popular_swiper__popular_slide">
-                    <img class="swiper-slide section__popular_swiper__popular_slide_img"
-                        src="../../public/img/habitacion__room_ejemplo_01.jpg" />
+                    <img class="swiper-slide section__popular_swiper__popular_slide_img" src="{{ room.img }}" />
 
                     <div class="section__popular_swiper__popular_slide_info">
                         <div class="section__popular_swiper__popular_slide_info_advantages">
-                            <img src="../../public/img/cama.svg" alt="cama" />
-                            <img src="../../public/img/wifi.svg" alt="wifi" />
-                            <img src="../../public/img/coche.svg" alt="coche" />
-                            <img src="../../public/img/copo.svg" alt="copo" />
-                            <img src="../../public/img/gym.svg" alt="gym" />
-                            <img src="../../public/img/fuma.svg" alt="no fumar" />
+                            <img src="{% static '/imgs/cama.svg' %}" alt="cama" />
+                            <img src="{% static '/imgs/wifi.svg' %}" alt="wifi" />
+                            <img src="{% static '/imgs/coche.svg' %}" alt="coche" />
+                            <img src="{% static '/imgs/copo.svg' %}" alt="copo" />
+                            <img src="{% static '/imgs/gym.svg' %}" alt="gym" />
+                            <img src="{% static '/imgs/fuma.svg' %}" alt="no fumar" />
                         </div>
                         <div class="section__popular_swiper__popular_slide_info_texts">
-                            <h3 class="section__popular_swiper__popular_slide_info_texts_h3">Minimal Duplex Room</h3>
-                            <p class="section__popular_swiper__popular_slide_info_texts_p">Lorem ipsum dolor sit amet,
-                                consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <h3 class="section__popular_swiper__popular_slide_info_texts_h3">{{ room.bedType }}</h3>
+
+                            <p class="section__popular_swiper__popular_slide_info_texts_p">{{room.descripcion}}</p>
+
                             <div class="section__popular_swiper__popular_slide_info_texts_div">
-                                <p class="section__popular_swiper__popular_slide_info_texts_div_price">$345/Night</p>
+                                <p class="section__popular_swiper__popular_slide_info_texts_div_price">$
+                                    {{room.rate}}/Night</p>
                                 <p class="section__popular_swiper__popular_slide_info_texts_div_new">Booking Now</p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-                <div class="swiper-slide section__popular_swiper__popular_slide">
-                    <img class="swiper-slide section__popular_swiper__popular_slide_img"
-                        src="../../public/img/habitacion__room_ejemplo_02.jpg" />
-
-                    <div class="section__popular_swiper__popular_slide_info">
-                        <div class="section__popular_swiper__popular_slide_info_advantages">
-                            <img src="../../public/img/cama.svg" alt="cama" />
-                            <img src="../../public/img/wifi.svg" alt="wifi" />
-                            <img src="../../public/img/coche.svg" alt="coche" />
-                            <img src="../../public/img/copo.svg" alt="copo" />
-                            <img src="../../public/img/gym.svg" alt="gym" />
-                            <img src="../../public/img/fuma.svg" alt="no fumar" />
-                        </div>
-                        <div class="section__popular_swiper__popular_slide_info_texts">
-                            <h3 class="section__popular_swiper__popular_slide_info_texts_h3">Minimal Duplex Room</h3>
-                            <p class="section__popular_swiper__popular_slide_info_texts_p">Lorem ipsum dolor sit amet,
-                                consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <div class="section__popular_swiper__popular_slide_info_texts_div">
-                                <p class="section__popular_swiper__popular_slide_info_texts_div_price">$345/Night</p>
-                                <p class="section__popular_swiper__popular_slide_info_texts_div_new">Booking Now</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
+                {% endfor %}
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

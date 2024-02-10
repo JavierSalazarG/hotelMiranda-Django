@@ -4,8 +4,11 @@ from django.db.models import F
 from db.models import Rooms
 def offers(request):
     discounted_rooms = Rooms.objects.filter(offerPrice__lt=F('rate'))
+    populars_rooms = Rooms.objects.filter(offerPrice=F('rate'))
     return render(
         request,
         "../templates/offers.html",
-        {"rooms": discounted_rooms}
+        {"rooms": discounted_rooms,
+         "popularRoom": populars_rooms
+         }
 )
