@@ -21,7 +21,7 @@ from django.urls import path
 from django.views.generic import TemplateView
 from db.views.contact import contact
 from db.views.about import about
-from db.views.rooms import rooms
+from db.views.rooms import rooms, roomId
 from db.views.offers import offers
 urlpatterns = [
     path('admindb/', admin.site.urls),
@@ -29,5 +29,6 @@ urlpatterns = [
     path('contact/', contact, name='contacts'),
     path('about/', about, name='about'),
     path('rooms/', rooms, name='rooms'),
+    path("room/<int:idRoom>/", roomId, name="roomDetail"),
     path('offers/', offers, name='offers'),
 ]
