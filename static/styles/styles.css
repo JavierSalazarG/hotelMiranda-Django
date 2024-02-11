@@ -10,6 +10,8 @@ html,
 
 body {
   min-width: 320px;
+  scrollbar-color: #222 #808080;
+  scrollbar-width: auto;
 }
 
 .header {
