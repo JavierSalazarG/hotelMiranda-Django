@@ -264,6 +264,12 @@ body {
 .button__take_restaurant {
   width: 13.5rem;
   height: 4rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   background: #bead8e;
   border: none;
   color: #fff;

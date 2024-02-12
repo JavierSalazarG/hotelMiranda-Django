@@ -7,6 +7,8 @@ class Contact(models.Model):
     phone = models.CharField(max_length=9)
     comentario = models.TextField()
     archive = models.BooleanField()
+    def __str__(self):
+        return self.nombre
 
 
 class Rooms(models.Model):

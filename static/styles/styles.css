@@ -103,6 +103,9 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 700px) {
@@ -234,7 +237,13 @@ body {
 
 .button_banner {
   width: 13.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 3.75rem;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
   text-align: center;
   color: #fff;
   border: none;
@@ -324,6 +333,7 @@ body {
 }
 
 .input__submit {
+  cursor: pointer;
   width: 15.6rem !important;
   height: 3.7rem;
   padding: 0 !important;
@@ -333,6 +343,10 @@ body {
   background-color: #bead8e !important;
   border: none;
   outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input::-webkit-datetime-edit {
@@ -749,14 +763,15 @@ input::-webkit-datetime-edit {
 }
 
 .button__video {
-  width: 13.5rem;
-  height: 3.75rem;
+  padding: 1.3rem 3rem;
+  cursor: pointer;
   background: #bdac8d;
   color: #fff;
   margin-top: 2.25rem;
   position: relative;
   bottom: -20rem;
   align-self: flex-start;
+  text-decoration: none;
 }
 
 @media (min-width: 700px) {

@@ -54,8 +54,10 @@
         <h2 class="h2_alert">THE ULTIMATE LUXURY EXPERIENCE</h2>
         <h1 class="h1__title">The Perfect Base For You</h1>
         <div class="div__box">
-            <button class="button_banner button__beige">TAKE A TOUR</button>
-            <button class="button_banner buttonblack">LEARN MORE</button>
+            <a class="button_banner button__beige" href="#section__video" onclick="scrollToSection()">TAKE A TOUR</a>
+            <a href="{% url 'rooms' %}" class="button_banner buttonblack">
+                LEARN MORE
+            </a>
         </div>
     </section>
     <section class="section__availability">
@@ -68,7 +70,7 @@
                 <label>LeDeparture Date</label>
                 <input type="date" name="ledparture" id="ledparture">
             </div>
-            <input type="submit" class="input__submit " value="CHECK AVAILABILITY">
+            <a href="{% url 'rooms' %}" class="input__submit">CHECK AVAILABILITY</a>
         </form>
     </section>
     <section class="section__about">
@@ -81,7 +83,7 @@
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut
                 aliquip ex ea commodo consequat.</P>
-            <button class="button__book">BOOL NOW</button>
+
         </div>
         <div class="div__imgs_about">
             <div class="div__about_img_1">
@@ -154,7 +156,7 @@
             </h5>
         </div>
     </section>
-    <section class="section__video">
+    <section id="section__video" class="section__video">
         <div class="div__text_video">
             <p class="p__intro">Intro video</p>
             <h2 class="h2__title">Meet With Our Luxury Place.</h2>
@@ -163,7 +165,7 @@
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                 ut
                 aliquip ex ea commodo consequat you have to understand this.</p>
-            <button class="button__video">BOOK NOW</button>
+            <a href="{% url 'offers' %}" class="button__video">BOOK NOW</a>
         </div>
         <iframe class="iframe__video"
             src="https://www.youtube.com/embed/Bu3Doe45lcU?si=cAuDFft_5fvRJTD-&amp;clip=UgkxoGaKcl356ATRFimV2AYXN4FwamgLJGPH&amp;clipt=EKjDARj4yQQ"
@@ -502,8 +504,16 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/header/openNavbar.js"></script>
+    <script src="{% static '/js/openNavbar.js' %}"></script>
 
     <script src="{% static '/js/home.js' %}"></script>
+    <script>
+        function scrollToSection() {
+            var section = document.getElementById('section__video');
+            section.scrollIntoView({ behavior: 'smooth' });
+            // Retorna false para evitar el comportamiento predeterminado del enlace
+            return false;
+        }
+    </script>
 
 </body>
