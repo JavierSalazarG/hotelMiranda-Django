@@ -192,7 +192,15 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 2.25rem;
-  height: 19rem;
+  height: 26rem;
+  gap: 1rem;
+}
+#additional_fields {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .section__main_availability_form_label {
   color: #222;

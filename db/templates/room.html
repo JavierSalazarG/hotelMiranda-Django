@@ -72,13 +72,23 @@
 
         <div class="section__main_availability">
             <h4 class="section__main_availability_h4">Check Availability</h4>
-            <form class="section__main_availability_form">
+            <form class="section__main_availability_form" id="availability_form" method="POST">
+                {% csrf_token %}
                 <label class="section__main_availability_form_label">Check In</label>
-                <input class="section__main_availability_form_input" type="date" />
+                <input class="section__main_availability_form_input" type="date" id="check_in" name="check_in" />
                 <label class="section__main_availability_form_label">Check Out</label>
-                <input class="section__main_availability_form_input" type="date" />
-                <input class="section__main_availability_form_submit" type="submit" value="Check Availability" />
+                <input class="section__main_availability_form_input" type="date" id="check_out" name="check_out" />
+                <button class="section__main_availability_form_submit" type="button" id="next_button">Siguiente</button>
+                <div id="additional_fields" style="display: none;">
+                    <label class="section__main_availability_form_label">Name</label>
+                    <input class="section__main_availability_form_input" type="text" id="name" name="name" />
+                    <label class="section__main_availability_form_label">Nota</label>
+                    <textarea class="section__main_availability_form_input" id="note" name="note"></textarea>
+                    <input class="section__main_availability_form_submit" type="submit" value="Submit" />
+                </div>
             </form>
+
+
         </div>
     </section>
     <section class="section__description">
@@ -325,5 +335,6 @@
     <script src="{% static '/js/openNavbar.js' %}"></script>
 
     <script src="{% static '/js/room.js' %}"></script>
+    <script src="{% static '/js/room_form.js' %}"></script>
 
 </body>

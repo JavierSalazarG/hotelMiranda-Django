@@ -22,7 +22,8 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from db.views.contact import contact
 from db.views.about import about
-from db.views.rooms import rooms, roomId
+from db.views.rooms import rooms
+from db.views.room import Room
 from db.views.offers import offers
 from db.views.Login import Login
 from db.views.Profile import ProfileView 
@@ -34,6 +35,6 @@ urlpatterns = [
     path('contact/', contact, name='contacts'),
     path('about/', about, name='about'),
     path('rooms/', rooms, name='rooms'),
-    path("room/<int:idRoom>/", roomId, name="roomDetail"),
+    path("room/<int:idRoom>/", Room, name="roomDetail"),
     path('offers/', offers, name='offers'),
 ]
