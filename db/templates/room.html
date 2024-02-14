@@ -72,6 +72,11 @@
 
         <div class="section__main_availability">
             <h4 class="section__main_availability_h4">Check Availability</h4>
+            {% if success_message %}
+            <div class="alert alert-success" role="alert">
+                {{ success_message }}
+            </div>
+            {% endif %}
             <form class="section__main_availability_form" id="availability_form" method="POST">
                 {% csrf_token %}
                 <label class="section__main_availability_form_label">Check In</label>
