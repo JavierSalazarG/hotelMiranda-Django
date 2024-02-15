@@ -27,9 +27,11 @@ from db.views.room import Room
 from db.views.offers import offers
 from db.views.Login import Login
 from db.views.Profile import ProfileView 
+from db.views.logOut import getLogOut
 urlpatterns = [
     path('admindb/', admin.site.urls),
     path('accounts/login/', Login.as_view(), name='login'), 
+    path("logout/", getLogOut, name="logout"),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('accounts/profile/', ProfileView.as_view(), name='profile'), 
     path('contact/', contact, name='contacts'),

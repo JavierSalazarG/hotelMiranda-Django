@@ -17,3 +17,70 @@
 table {
   gap: 1rem;
 }
+
+.main-login {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.form_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem;
+  padding-left: 1rem;
+}
+
+p label {
+  color: rgb(110, 110, 110);
+  font-weight: 600;
+}
+
+p input {
+  width: 100%;
+  height: 1.5rem;
+  padding: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 29.3rem;
+  margin-top: 0.5rem;
+  border: none;
+  color: #777;
+  font-weight: 400;
+  background: #f8f8f8;
+  font-family: "Roboto";
+  font-size: 1rem;
+  outline: none;
+}
+
+.div_options {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div_options a {
+  cursor: pointer;
+}
+.div_options button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #bead8e;
+  color: #fff;
+  font-family: "Roboto";
+}
