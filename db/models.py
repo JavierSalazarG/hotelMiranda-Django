@@ -30,4 +30,3 @@ class Booking(models.Model):
     id_habitacion = models.ForeignKey(Rooms, on_delete=models.CASCADE)
     status = models.CharField(max_length=255)
     
-    

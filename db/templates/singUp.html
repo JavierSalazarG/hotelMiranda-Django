@@ -41,17 +41,31 @@
 
         </div>
     </header>
-    <h2>Log In</h2>
+    <h2>Crear Cuenta</h2>
     <section class="main-login">
         <article class="main-login__card">
             <h2 class="h2_title">Sign in</h2>
             <form class="form_login" method="post">
-                {% csrf_token %} {{ form.as_p }}
-                <div class="div_options">
-                    <button type="submit">Entrar</button>
-                    <a href="{% url 'singUp' %}">Crear cuenta</a>
-                </div>
+                {% csrf_token %}
 
+
+                <label for="id_username">Numbre de usuario:</label>
+                {{ form.username }}
+
+
+                <label for="id_password1">Password:</label>
+                {{ form.password1 }}
+
+                <label for="id_password2">Password confirmation:</label>
+                {{ form.password2 }}
+
+                <label for="id_email">Email:</label>
+                {{ form.email }}
+
+                <div class="div_options">
+                    <button type="submit">Crear</button>
+                    <a href="{% url 'login' %}">Iniciar Sesión</a>
+                </div>
             </form>
 
         </article>

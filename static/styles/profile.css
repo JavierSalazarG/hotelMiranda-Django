@@ -75,6 +75,8 @@ p input {
 
 .div_options a {
   cursor: pointer;
+  text-decoration: none;
+  color: #777;
 }
 .div_options button {
   cursor: pointer;

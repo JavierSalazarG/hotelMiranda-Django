@@ -25,12 +25,13 @@ from db.views.about import about
 from db.views.rooms import rooms
 from db.views.room import Room
 from db.views.offers import offers
-from db.views.Login import Login
+from db.views.Login import Login, Sign_up
 from db.views.Profile import ProfileView 
 from db.views.logOut import getLogOut
 urlpatterns = [
     path('admindb/', admin.site.urls),
     path('accounts/login/', Login.as_view(), name='login'), 
+    path('accounts/singUp/', Sign_up.as_view(), name='singUp'),
     path("logout/", getLogOut, name="logout"),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('accounts/profile/', ProfileView.as_view(), name='profile'), 
