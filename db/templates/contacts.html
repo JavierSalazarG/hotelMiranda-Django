@@ -143,6 +143,11 @@
         </div>
     </section>
     <section class="section__form">
+        {% if success_message %}
+        <div id="success_message" class="alert alert-success" role="alert">
+            {{ success_message }}
+        </div>
+        {% endif %}
         <form class="section__form_form" method="POST">
             {% csrf_token %}
             <label class="section__form_form_label">
@@ -390,7 +395,8 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="../header/openNavbar.js"></script>
+        <script src="{% static '/js/openNavbar.js' %}"></script>
+        <script src="{% static '/js/contacts.js' %}"></script>
     </footer>
 
 
