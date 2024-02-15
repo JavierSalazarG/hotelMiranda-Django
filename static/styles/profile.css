@@ -28,7 +28,7 @@ table {
   font-family: "Archivo", sans-serif;
 }
 
-h2 {
+.h2_title {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 3rem;
