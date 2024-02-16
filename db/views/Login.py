@@ -15,6 +15,5 @@ class Login(LoginView):
         return super().dispatch(request, *args, **kwargs)
 
 class Sign_up(CreateView):
-    form_class = UserCreationForm
     template_name = "../templates/singUp.html"
     success_url = reverse_lazy('login')
